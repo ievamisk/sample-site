@@ -1,0 +1,22 @@
+<div class="sidebar">
+  <div class="sidebar-article">
+      <h1 class="sidebar-article-title">Aenean ac diam nec neque fringilla</h1>
+      <div class="sidebar-article-title-underline"></div>
+      <p class="sidebar-article-paragraph">
+          Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. 
+          Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. 
+          Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis 
+          ligula at varius.
+      </p>
+    </div>
+    <form class="sidebar-form" (submit)="validation($event)">
+      <label class="sidebar-form-label" for="firstname">First name:</label>
+      <input class="sidebar-form-input" [ngClass]="(firstNameValid)" [(ngModel)]="firstName" type="text" name="firstname" placeholder="Enter your name">
+      <label class="sidebar-form-label" for="lastname">Last name:</label>
+      <input class="sidebar-form-input" [ngClass]="(lastNameValid)" [(ngModel)]="lastName" type="text" name="lastname" placeholder="Enter your last name">
+      <label class="sidebar-form-label" for="messagebox">Message:</label>
+      <textarea class="sidebar-form-textarea" [ngClass]="(messageValid)" [(ngModel)]="message" type="text" name="messagebox"></textarea>
+      <button class="sidebar-form-button">SUBMIT</button>
+
+    </form>
+</div>

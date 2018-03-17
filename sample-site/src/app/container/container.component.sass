@@ -1,0 +1,30 @@
+@import ../../assets/sass/default
+
+$background: $lightest-gray
+.container
+    padding-top: 38px
+    width: 100%
+    background-color: $background
+
+    &-wrapper
+        display: flex
+        flex-flow: row wrap
+        max-width: $max-width
+        width: $wrapper-width
+        margin: 0 auto
+
+    &-primary
+        width: 70%
+
+        @media screen and (max-width: $tablet)
+            width: 100%
+    
+    &-sidebar
+        width: 30%
+
+        @media screen and (max-width: $tablet)
+            width: 100%
+
+    &-secondary
+        width: 100%
+

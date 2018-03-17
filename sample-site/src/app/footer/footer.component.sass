@@ -1,0 +1,76 @@
+@import ../../assets/sass/default
+
+$background: $gray
+$text: $lighter-gray
+$logo: $white
+$link-text: $white
+
+.footer
+    background-color: $background
+    padding: 23px 0 20px 0
+
+    &-wrapper
+        width: $wrapper-width
+        max-width: $max-width
+        margin: 0 auto
+
+
+    &-menu
+        &-list
+            display: flex
+            flex-direction: row
+            list-style-type: none
+            margin: 0
+            padding: 0
+
+            @media screen and (max-width: $tablet)
+                flex-flow: column nowrap
+                
+            &-item
+                padding: 0 10px
+                border-right: 2px solid $white
+
+                @media screen and (max-width: $tablet)
+                    border-bottom: 0.5px solid $white
+                    border-right: 0
+                    padding: 10px 0
+                    text-align: center
+                
+                &:first-child
+                    padding-left: 0
+                    
+
+                &:last-child
+                    border: none
+                > a 
+                    text-decoration: none
+                    color: $link-text
+
+    &-row
+        display: flex
+        flex-direction: row
+        margin-top: 27px
+
+        @media screen and (max-width: $tablet)
+            flex-flow: column nowrap
+            text-align: center
+            margin: 0 auto
+
+        &-paragraph
+            width: 100%
+            color: $text
+            font-size: 12px
+            margin-bottom: 0
+
+        &-logo
+            width: 15%
+            color: $logo
+            font-size: 31px
+            text-align: right
+            margin-bottom: 0
+
+            @media screen and (max-width: $tablet)
+                text-align: center
+                width: 100%
+                margin-top: 15px
+

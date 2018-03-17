@@ -1,0 +1,52 @@
+<div class="sidenav">
+  <div class="sidenav-header">
+    <h1 class="sidenav-header-title">The Site</h1>
+    <!-- <span class="sidenav-header-icon"><i class="fas fa-bars"></i></span> -->
+    <div (click)="toggleOpen()" class="sidenav-header-icon">
+      <i class="fa" [ngClass]="(open) ? 'fa-times' : 'fa-bars'"></i>
+    </div>
+  </div>
+  <div class="sidenav-list" [ngClass]="(open) ? 'sidenav-open': 'sidenav-closed'" [ngStyle]="{'height.px': getSidenavHeight()}">
+    <nav class="sidenav-upper">
+      <ul class="sidenav-upper-list">
+        <li class="sidenav-upper-list-item"><a href="#">menu link</a></li>
+        <li class="sidenav-upper-list-item"><a href="#">menu link</a></li>
+        <li class="sidenav-upper-list-item"><a href="#">menu link</a></li>
+      </ul>
+      </nav>
+      <nav class="sidenav-lower">
+        <ul class="sidenav-lower-list">
+          <li (click)="toggleItem(0)" class="sidenav-lower-list-item">
+            <a href="#">
+              menu link
+              <span class="sidenav-lower-list-item-expand"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <app-side-navbar-items [active]="itemsActivity[0]"></app-side-navbar-items>
+          </li>
+          <li (click)="toggleItem(1)" class="sidenav-lower-list-item">
+            <a href="#">
+              menu link
+              <span class="sidenav-lower-list-item-expand"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <app-side-navbar-items [active]="itemsActivity[1]"></app-side-navbar-items>
+          </li>
+          <li (click)="toggleItem(2)" class="sidenav-lower-list-item">
+            <a href="#">
+              menu link
+              <span class="sidenav-lower-list-item-expand"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <app-side-navbar-items [active]="itemsActivity[2]"></app-side-navbar-items>
+          </li>
+          <li (click)="toggleItem(3)" class="sidenav-lower-list-item">
+            <a href="#">
+              menu link
+              <span class="sidenav-lower-list-item-expand"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <app-side-navbar-items [active]="itemsActivity[3]"></app-side-navbar-items>
+          </li>
+        </ul>
+      </nav>
+  </div>
+  
+  
+</div>

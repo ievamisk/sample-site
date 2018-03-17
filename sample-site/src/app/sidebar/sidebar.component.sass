@@ -1,0 +1,84 @@
+@import ../../assets/sass/default
+
+$underline: $black
+$form-border: $darker-gray
+$button-text: $white
+$button: $pink
+$valid: $green
+$invalid: $red
+
+.sidebar
+    width: 100%
+    box-sizing: border-box
+    padding-left: 20px
+
+    @media screen and (max-width: $tablet)
+        padding-left: 0
+        margin-top: 20px
+
+    &-article
+        &-title
+            width: 70%
+            text-align: left
+            font-size: 24px
+            margin: 0 0 12px 0
+            font-family: serif
+
+
+            &-underline
+                height: 3px
+                background-color: $underline
+                width: 100%
+
+        &-paragraph
+            font-size: 14px
+            line-height: 20px
+            margin-top: 18px
+            margin-bottom: 32px
+
+    &-form
+        border: 1px solid $form-border
+        padding: 20px
+
+        &-label
+            width: 100%
+            font-size: 14px
+
+        &-input
+            width: 100%
+            border: 1px solid $form-border
+            font-size: 14px
+            margin: 10px 0 20px 0
+            padding: 8px 10px
+            box-sizing: border-box
+
+            &-valid
+                border: 1px solid $valid
+            &-invalid
+                border: 1px solid $invalid
+
+        &-textarea
+            resize: none
+            width: 100%
+            padding: 8px 10px
+            font-size: 14px
+            border: 1px solid $form-border
+            margin-top: 10px
+            height: 130px
+            box-sizing: border-box
+            font-family: sans-serif
+            &-valid
+                border: 1px solid $valid
+            &-invalid
+                border: 1px solid $invalid
+
+        &-button
+            height: 36px
+            width: 110px
+            border: none
+            background-color: $button
+            color: $button-text
+            font-size: 14px
+            letter-spacing: 4px
+            margin-top: 18px
+                

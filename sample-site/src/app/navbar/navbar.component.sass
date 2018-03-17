@@ -1,0 +1,83 @@
+@import ../../assets/sass/default
+
+$background: $pink
+$title: $light-pink
+$link-upper: $black
+$link-lower: $white
+$link-upper-hover: $white
+$link-lower-hover: $darkest-gray
+
+.navbar 
+    background-color: $background
+    display: flex
+    flex-direction: column
+    width: 100%
+    
+    @media screen and (max-width: $tablet)
+        display: none
+
+    &-wrapper
+        width: $wrapper-width
+        max-width: $max-width
+        margin: 0 auto
+
+    &-upper
+        display: block
+        display: flex
+        flex-flow: row-reverse nowrap
+        &-list           
+            display: inline-block
+            display: flex
+            flex-flow: row nowrap
+            float: right
+            list-style-type: none
+            font-size: 14px
+            margin: 0
+            padding-top: 26px
+
+            &-item
+                margin-right: 13px
+                &:last-child
+                    margin-right: 0
+                > a
+                    text-decoration: none
+                    color: $link-upper
+                    &:hover
+                        color: $link-upper-hover
+            
+
+
+    &-lower
+        display: flex
+        align-items: stretch
+        flex-flow: row nowrap
+        justify-content: space-between
+
+        &-title
+            margin: 0
+            color: $title
+            font-size: 60px
+            padding-bottom: 10px
+
+        &-list
+            display: flex
+            align-items: flex-end
+            flex-flow: row nowrap
+            font-size: 20px
+            list-style-type: none
+            margin: 0
+            padding: 0
+            padding-bottom: 20px
+
+            &-item
+                position: relative
+                margin-right: 20px
+                color: $link-lower
+                &:last-child
+                    margin-right: 0
+                &:hover
+                    color: $link-lower-hover
+                    cursor: pointer
+    
+
+    

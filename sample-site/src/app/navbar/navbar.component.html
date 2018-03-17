@@ -1,0 +1,38 @@
+<div class="navbar">
+    <div class="navbar-wrapper">
+        <div class="navbar-upper">
+            <ul class="navbar-upper-list">
+                <li class="navbar-upper-list-item">
+                    <a href="#">menu link</a>
+                </li>
+                <li class="navbar-upper-list-item">
+                    <a href="#">menu link</a>
+                </li>
+                <li class="navbar-upper-list-item">
+                    <a href="#">menu link</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-lower">
+            <h1 class="navbar-lower-title">The Site</h1>
+            <ul class="navbar-lower-list">
+                <li (click)="toggleMenuItem(0)" class="navbar-lower-list-item">
+                    menu link
+                    <app-dropdown [active]="menuItemsActivity[0]"></app-dropdown>
+                </li>
+                <li (click)="toggleMenuItem(1)" class="navbar-lower-list-item">
+                    menu link
+                    <app-dropdown [active]="menuItemsActivity[1]"></app-dropdown>
+                </li>
+                <li (click)="toggleMenuItem(2)" class="navbar-lower-list-item">
+                    menu link
+                    <app-dropdown [active]="menuItemsActivity[2]"></app-dropdown>
+                </li>
+                <li (click)="toggleMenuItem(3)" class="navbar-lower-list-item">
+                    menu link
+                    <app-dropdown [active]="menuItemsActivity[3]"></app-dropdown>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

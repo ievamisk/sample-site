@@ -1,0 +1,29 @@
+@import ../../assets/sass/default
+
+$card: $light-gray
+    
+.secondary
+    background-color: $card
+    display: flex
+    justify-content: space-around
+    flex-flow: row nowrap
+    padding: 24px 10px 26px 10px
+    margin: 23px 0
+    width: 100%
+    box-sizing: border-box
+
+    @media screen and (max-width: $tablet)
+        flex-flow: column nowrap
+        padding: 10px
+
+    &-paragraph
+        font-size: 14px
+        line-height: 20px
+        margin: 0
+        padding: 0 10px
+
+        @media screen and (max-width: $tablet)
+            padding: 10px
+
+        &:last-child
+            margin-right: 0

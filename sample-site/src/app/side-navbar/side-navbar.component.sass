@@ -1,0 +1,87 @@
+@import ../../assets/sass/default
+
+$background: $pink
+$upper-link: $white
+$lower-link: $white
+$border: $white
+$link-upper-hover: $darkest-gray
+$link-lower-hover: $darkest-gray
+$title: $light-pink
+
+.sidenav
+    background-color: $background
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    display: none
+
+    @media screen and (max-width: $tablet)
+        width: 100%
+        display: block
+
+    &-list
+        transition: height .3s ease
+        overflow-y: hidden
+
+    &-open
+        display: block
+        width: 100%
+        overflow-y: auto
+    
+    &-header
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding: 10px 20px
+
+        &-title
+            color: $title
+            margin: 0
+            
+            font-size: 34px
+
+        &-icon
+            color: $title
+            font-size: 24px
+            margin: auto 0
+        
+    &-upper
+        &-list
+            margin: 0
+            padding: 0
+            list-style-type: none
+            &-item
+                border-bottom: 1px solid $border
+                padding: 10px 20px
+                > a
+                    text-decoration: none
+                    color: $upper-link
+            &:hover
+                color: $link-upper-hover
+
+    &-lower
+        
+        &-list
+            margin: 0
+            padding: 0
+            list-style-type: none
+            &-item
+                border-bottom: 1px solid $border
+                padding: 10px 20px
+                > a
+                    text-decoration: none
+                    color: $lower-link
+                &:last-child
+                    border: none
+                
+                &:hover
+                    color: $link-lower-hover
+                &-expand
+                    margin-left: 10px
+                            
+
+
+
+
+
