@@ -7,7 +7,7 @@
 
 ## Launching
 * Open project folder
-* Go to sample-site directory (cd sample-site)
-* Run npm install to install Angular
-* Run ng serve -o
+* Go to sample-site directory (**cd sample-site**)
+* Run **npm install** to install Angular
+* Run **ng serve -o**
 * Now you can see my page :)
