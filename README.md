@@ -6,7 +6,8 @@
 * Tested and works on newest browsers (Chrome, Firefox, IE)
 
 ## Launching
-* First go to sample-site directory
+* Open project folder
+* Go to sample-site directory (cd sample-site)
 * Run npm install to install Angular
 * Run ng serve -o
 * Now you can see my page :)
