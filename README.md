@@ -11,3 +11,6 @@
 * Run `npm install` to install Angular
 * Run `ng serve -o`
 * Now you can see my page :)
+
+## Screenshots
+![sample-site](https://user-images.githubusercontent.com/17141606/40874913-0ba63396-667f-11e8-9ba2-b2f119976125.PNG)
